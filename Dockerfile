@@ -15,13 +15,13 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 8080
+EXPOSE 5500
 CMD [ "node", "app.js" ]
 
 # Build the app
 #  docker build -t node-web-app .
 #  Run the app
-#  docker run -p 80:8080 -d node-web-app
+#  docker run -p 80:5500 -d node-web-app
 # test the app
 # curl -i localhost:80
 
