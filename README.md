@@ -66,8 +66,8 @@ Node JS Application
        `docker run -p 80:5500 -d node-web-app`
     - Test the app    
        `curl -i localhost:80`
-    - Get the docker ID  & Enter the container      
-       `docker ps`
+    - Get the docker container ID     
+       `docker ps -a`
     -  Access the container from command line       
        `docker exec -it <container id> /bin/bash `
 
