@@ -1,0 +1,24 @@
+<%-include('./layout/header')%>
+
+<br><br>
+
+ <center>This is our home page.</center>
+
+    <% if(data.loggedIn) { %>
+    <ul>
+        <li><%= data.user1.name %></li>
+        <li><%= data.user1.nickname%></li>
+        <li><%= data.user1.age %></li>
+        <li><%= data.user1.phone%></li>
+    </ul>
+
+    <ul>
+        <li><%= data.user2.name %></li>
+        <li><%= data.user2.nickname%></li>
+        <li><%= data.user2.age %></li>
+        <li><%= data.user2.phone%></li>
+    </ul>
+    <% }; %>
+
+<br><br>
+<%-include('./layout/footer')%>
