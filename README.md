@@ -57,8 +57,24 @@ Node JS Application
     - Request to merge new improvements into the master branch  
     - Push update to the main branch using git once the merge requests are approved.    
     - You may also identify and suggest bugs that require fixing.
-	 - Finally host your website on Github live pages or domain hoster of your choice!  
+	- Finally host your website on Github live pages or domain hoster of your choice! 
+	 
+3. To deploy using docker:   
+    - Build the app     
+       `docker build -t node-web-app .`
+    - Run the app    
+       `docker run -p 80:5500 -d node-web-app`
+    - Test the app    
+       `curl -i localhost:80`
+    - Get the docker ID  & Enter the container      
+       `docker ps`
+    -  Access the container from command line       
+       `docker exec -it <container id> /bin/bash `
 
+   Live Link of docker deployed App     
+   https://nodejs2-z5ym.onrender.com/   
+   
+   
 ### Contact Information
  - Name : Eliud Gateri
  - Email: egateri@gmail.com
