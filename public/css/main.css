@@ -1,0 +1,113 @@
+/* image sizing  */
+img {
+    /* width: 200px;
+      height: 300px;  */
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* styles for header  */
+  .jumbotron {
+    /* background-color: goldenrod; */
+    background-color: blueviolet;
+    color: #ffffff;
+    padding: 50px 25px;
+    font-size: medium;
+    /* --- to remove below */
+    text-align: left;
+    /* padding: 100px 50px; */
+  }
+  
+  /* style for navigation  */
+  #navigation {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-right: 5px;
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* size of the container  */
+  .container-fluid {
+    padding: 10px 10px;
+    margin-top: 10px;
+  }
+  
+  /* background of culture container  */
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  
+  /* style to display Akan Name  */
+  #demo {
+    color: green;
+    justify-items: right;
+  }
+  
+  /* style to display errors in input entries  */
+  #error {
+    color: red;
+  }
+  
+  /* style for the form  */
+  #form {
+    width: 100%;
+    padding: 5px;
+    border: solid;
+    border-color: darkolivegreen;
+    border-radius: 10px;
+    border-width: 1pt;
+    height: 100%;
+  }
+  
+  /* font size of form text  */
+  .form-text {
+    font-size: x-small;
+    color: f2f2f2;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* font size of form label  */
+  .form-label {
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* margin of form input fields  */
+  .mb-3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* styles for the footer  */
+  #footer {
+    background-color: black;
+    color: #ffffff;
+    padding: 70px 20px;
+    margin-top: 5px;
+    text-align: left;
+  }
+  
+  /* style for landing page instructions */
+  .text-list {
+    font-style: italic;
+    color: darkgreen;
+    font-size: small;
+  }
+  /* style for input fields */
+  .text-muted {
+    font-size: small;
+  }
+  
+  /* style for Akan Names Table */
+  #table {
+    font-size: x-small;
+    /* height: 43px;
+    width: 433px; */
+  }
+  
+  

@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: white;
+    margin:0;
+  }
+  
+  .header{
+    background-image: url(../assets/backgrounds/h_img.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    margin-bottom: 10px;
+  }
+  .header img{
+    margin-top: 3%;
+  }
+   h6, p {
+    font-size:small;
+  }
+  
+  .services {
+    background-image: url(../assets/backgrounds/s_image.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    padding-right: 0%;
+    padding-bottom: 3%;
+    padding-left: 0%;
+    margin-bottom: 30px;
+  }
+  
+  .contact {
+    /* background-image: url(../images/c_image.jpg); */
+    background-image: url(https://egateri.github.io/delani-studio/assets/backgrounds/c_image.jpg);
+    
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 2%;
+    padding-right: 0%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .designDiv,
+  .developmentDiv,
+  .productManagementDiv
+  {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+  }
+  
+  input {
+    background: transparent;
+    border-width: 0.1ch;
+    border-color: white;
+    color: white !important;
+    font-weight: bolder;
+    
+  }
+  
+  textarea {
+    background: transparent;
+    border-width: 0.1ch;
+    border-color: white;
+    height: 240px;
+    color: white !important;
+    font-weight: bolder;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 4px;
+  }
+  
+  input[type=text]::-webkit-input-placeholder
+  { 
+    color: white; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  }
+  textarea::-webkit-input-placeholder
+  { 
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  }
+  
+  input[type=email]::-webkit-input-placeholder
+  { 
+    color: white; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  }
+  
+  input[type=text] {
+    width: 41%;
+    height:30px;
+    margin-left: 10%;
+    float: left;
+    border-radius: 3px;
+  }
+  
+  input[type=email] {
+    width: 37%;
+    height:30px;
+    float: right;
+    margin-right: 10%;
+    border-radius: 3px;
+  }
+  
+  input[type=submit]{
+    float: left;
+    margin-left: 10%;
+    height:35px;
+    border-radius: 3px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  .projectOneDiv,
+  .projectTwoDiv,
+  .projectThreeDiv,
+  .projectFourDiv,
+  .projectFiveDiv,
+  .projectSixDiv,
+  .projectSevenDiv,
+  .projectEightDiv {
+    position: relative;
+    height: 100%;
+  }
+  
+  .projectOneName,
+  .projectTwoName,
+  .projectThreeName,
+  .projectFourName,
+  .projectFiveName,
+  .projectSixName,
+  .projectSevenName,
+  .projectEightName {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: black;
+    display: none;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    textarea{
+      height:190px;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    textarea{
+      height:150px;
+    } 
+    h5 {
+      font-size: small;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    textarea{
+      height:120px;
+    }
+    h5 {
+      font-size: x-small;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    textarea{
+      height:80px;
+    }
+    h5 {
+      font-size: xx-small;
+    }
+  }
