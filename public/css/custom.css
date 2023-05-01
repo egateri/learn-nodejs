@@ -6,56 +6,34 @@
     margin:0;
   }
   
-  .header{
-    background-image: url(../assets/backgrounds/h_img.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    padding-top: 10%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    margin-bottom: 10px;
+  .field li{
+    font-size:small;
   }
-  .header img{
-    margin-top: 3%;
+  .users li {
+   
+    color:darkgreen;
   }
    h6, p {
     font-size:small;
   }
+
+    /* styles for the footer  */
+    #footer {
+      background-color: black;
+      color: #ffffff;
+      padding: 70px 20px;
+      margin-top: 5px;
+      text-align: left;
+      bottom: 0;
+    }
+    #footer p {
+      
+      text-align: left;
+    }
   
-  .services {
-    background-image: url(../assets/backgrounds/s_image.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    padding-top: 5%;
-    padding-right: 0%;
-    padding-bottom: 3%;
-    padding-left: 0%;
-    margin-bottom: 30px;
-  }
+
   
-  .contact {
-    /* background-image: url(../images/c_image.jpg); */
-    background-image: url(https://egateri.github.io/delani-studio/assets/backgrounds/c_image.jpg);
-    
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding-top: 2%;
-    padding-right: 0%;
-    padding-bottom: 5%;
-    padding-left: 0%;
-  }
+
   
   p,
   h1,
@@ -64,109 +42,136 @@
   h4,
   h5,
   h6,
-  .designDiv,
-  .developmentDiv,
-  .productManagementDiv
-  {
-    text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+  ul
+ {
+    text-align: left;
+     
   }
   
-  input {
-    background: transparent;
+  #myform input {
+    /* background: transparent; */
     border-width: 0.1ch;
-    border-color: white;
-    color: white !important;
+    /* border-color: white; */
+    border-color: grey;
+    /* color: white !important; */
+    color: black !important;
     font-weight: bolder;
     
   }
   
-  textarea {
-    background: transparent;
-    border-width: 0.1ch;
-    border-color: white;
-    height: 240px;
-    color: white !important;
-    font-weight: bolder;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 4px;
-  }
+  /* #myform textarea { */
+    /* background: transparent; */
+    /* border-width: 0.1ch; */
+    /* border-color: grey; */
+    /* height: 240px; */
+    /* color: white !important; */
+    /* color: black !important; */
+    /* font-weight: bolder; */
+    /* width: 80%; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    /* border-radius: 4px; */
+  /* } */
   
-  input[type=text]::-webkit-input-placeholder
-  { 
-    color: white; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  }
-  textarea::-webkit-input-placeholder
-  { 
-    color:white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  }
+  /* #myform input[type=text]::-webkit-input-placeholder */
+  /* {  */
+    /* color:white; */
+    /* color:black; */
+    
+  /* } */
+  /* #myform textarea::-webkit-input-placeholder */
+  /* {  */
+    /* color:white; */
+    /* color:black; */
+
+  /* } */
   
-  input[type=email]::-webkit-input-placeholder
+  /* #myform input[type=email]::-webkit-input-placeholder
   { 
-    color: white; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  }
+     /* color:white; */
+     /* color:black; */
+    
+  /* } */ 
   
-  input[type=text] {
+  /* #myform input[type=text] {
     width: 41%;
     height:30px;
     margin-left: 10%;
     float: left;
     border-radius: 3px;
-  }
+  } */
   
-  input[type=email] {
+  /* #myform input[type=email] {
     width: 37%;
     height:30px;
     float: right;
     margin-right: 10%;
     border-radius: 3px;
-  }
+  } */
   
-  input[type=submit]{
+  /* #myform input[type=submit]{
     float: left;
     margin-left: 10%;
     height:35px;
     border-radius: 3px;
-  }
+    border-color: grey;
+  } */
   
-  form {
+  /* #myform  form {
     margin-bottom: 20px;
-  }
+    padding:30px;
+  } */
+
+  /* style for the form  */
+#form {
+  width: 100%;
+  padding: 5px;
+  border: solid;
+  border-color: darkolivegreen;
+  border-radius: 10px;
+  border-width: 1pt;
+  height: 100%;
+}
+
+/* font size of form text  */
+.form-text {
+  font-size: x-small;
+  color: f2f2f2;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* font size of form label  */
+.form-label {
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+}
+
+/* margin of form input fields  */
+.mb-3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* style for landing page instructions */
+.text-list li {
+  font-style: italic;
+  color: darkgreen;
+  font-size: small;
+  text-align: left;
+}
+/* style for input fields */
+.text-muted {
+  font-size: small;
+  text-align: left;
+}
   
-  .projectOneDiv,
-  .projectTwoDiv,
-  .projectThreeDiv,
-  .projectFourDiv,
-  .projectFiveDiv,
-  .projectSixDiv,
-  .projectSevenDiv,
-  .projectEightDiv {
-    position: relative;
-    height: 100%;
-  }
-  
-  .projectOneName,
-  .projectTwoName,
-  .projectThreeName,
-  .projectFourName,
-  .projectFiveName,
-  .projectSixName,
-  .projectSevenName,
-  .projectEightName {
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: black;
-    display: none;
-  }
-  
+ h6 .bg-bg-light {
+  text-align: left; 
+}
+
   @media screen and (max-width: 1200px) {
     textarea{
       height:190px;
@@ -198,3 +203,63 @@
       font-size: xx-small;
     }
   }
+
+  /* begin here  */
+
+  /* span style */
+#beforepara {
+  float: left;
+  font-size: 250%;
+  padding: 0px 3px 0px 3px;
+  display: inline;
+}
+
+/* Image style */
+img {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 60%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  padding-left: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout  */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/* Field to hold content */
+.field {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+h3 {
+  color: green;
+}

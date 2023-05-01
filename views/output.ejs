@@ -1,11 +1,11 @@
-<%-include('./layout/header')%>
+<%- include('layout/header') -%>
 <br><br>
-<center>This is our Output page.</center>
+<h3>This is our Output page.</h3>
 
     <ul>
-        <li><%= data.name %></li>
-        <li><%= data.email %></li>
-        <li><%= data.comment %></li>
+        <li> User Name: <%= data.name %></li>
+        <li> Password :<%= data.password %></li>
+      
     </ul>
 <br><br>
-<%-include('./layout/footer')%>
+<%- include('layout/footer') -%>

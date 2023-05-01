@@ -1,5 +1,108 @@
-<%-include('./layout/header')%>
-<br><br>
-<center>This is our Register page.</center>
-<br><br>
-<%-include('./layout/footer')%>
+<%- include('layout/header') -%> <br /><br />
+<br />
+<div class="container">
+  <h3>Registration:</h3>
+  <p class="text-muted">Please provide below details to Register as a User:</p>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-7 col-md-6 col-lg-5">
+      <form id="form" method="post" action="/register">
+        <div class="mb-0">
+          <label for="name" class="form-label">Name:</label>
+          <input
+            class="form-control input-sm"
+            id="inputsm"
+            type="text"
+            name="name"
+            value=""
+            placeholder=""
+            required
+          />
+          <div id="" class="form-text">Enter Your Name</div>
+        </div>
+        <div class="mb-0">
+          <label for="nickname" class="form-label">Nick Name:</label>
+          <input
+            class="form-control input-sm"
+            id="inputsm"
+            type="text"
+            name="nickname"
+            value=""
+            placeholder=""
+            required
+          />
+          <div id="" class="form-text">Enter Your Nick Name</div>
+        </div>
+        <div class="mb-0">
+          <label for="phone" class="form-label">Phone Number:</label>
+          <input
+            class="form-control input-sm"
+            id="inputsm"
+            type="number"
+            name="phone"
+            value=""
+            min="1000"
+            max="9999"
+            placeholder=""
+            required
+          />
+          <div id="" class="form-text">Enter Your Phone Number</div>
+        </div>
+        <div class="mb-0">
+          <label for="date" class="form-label">Date of Birth:</label>
+          <input
+            class="form-control input-sm"
+            id="inputsm"
+            type="date"
+            name="date"
+            value=""
+            placeholder=""
+            required
+          />
+          <div id="" class="form-text">Enter Your Date of Birth</div>
+        </div>
+        <div class="mb-0">
+          <label for="password" class="form-label">Password:</label>
+          <input
+            class="form-control input-sm"
+            id="inputsm"
+            type="password"
+            name="password"
+            value=""
+            placeholder=""
+            required
+          />
+          <div id="" class="form-text">Enter Your Password</div>
+        </div>
+        <div class="mb-0">
+          <!-- Radio button to choose gender  -->
+          <label for="Gender" class="form-label">Select your Gender:</label
+          ><br />
+           
+          <input type="radio" id="gender" name="gender" value="male" required />
+            <label for="male">Male</label><br />
+           
+          <input
+            type="radio"
+            id="gender"
+            name="gender"
+            value="female"
+            required
+          />
+            <label for="female">Female</label><br />
+          <div id="" class="form-text">
+            Choose your Gender as either Male or Female
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary h6">Submit</button>
+      </form>
+    </div>
+    <div class="col-sm-5 col-md-6 col-lg-7"></div>
+  </div>
+</div>
+
+<br />
+
+<%- include('layout/footer') -%>

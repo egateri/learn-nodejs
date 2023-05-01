@@ -1,24 +1,110 @@
-<%-include('./layout/header')%>
+<%- include('layout/header') -%>
 
 <br><br>
 
- <center>This is our home page.</center>
+<div class="row">
+    <div class="leftcolumn">
+      <div class="field">
+        <h3>About The Project</h3>
+            <p><span id="beforepara">T</span>his is a <strong>Node JS</strong> Web Application Project.
+               This Project helps me demostrate the skills I acquired in Week 4 of the study.</p>
 
-    <% if(data.loggedIn) { %>
-    <ul>
-        <li><%= data.user1.name %></li>
-        <li><%= data.user1.nickname%></li>
-        <li><%= data.user1.age %></li>
-        <li><%= data.user1.phone%></li>
-    </ul>
+             <p>In addition to Node JS, below languages have been made use of:</p>
+               <ul>
+                 <li>Embended JavaScript</li>
+                 <li>Jquery</li>
+                 <li>Cascading Style Sheets</li>
+                 <li>Hypertext Make Up language</li>
+                 <li>NodeMon</li>
+                 <li>Bootstrap</li>
+                 <li>Node Package Manager</li>
+               </ul>
+             <p>The main skills acquired in these week is how to create routes on the webservice - creation of Middlewares and
+               setting configurations configuration .</p>
+    </div> 
+    <div class="field"> 
+      <h3>BDD</h3>        
+             <p><span id="beforepara">A</span>s a User, I would like;</p>
+           
+               <ol>
+                 <li>Efficiently use the website across devices of all sizes and browsers.</li>
+               </ol>
+    </div> 
+    <div class="field"> 
+      <h3>Setup and Installations Instructions</h3>          
+             <p>To develop a similar web application or make improvements:</p>
 
-    <ul>
-        <li><%= data.user2.name %></li>
-        <li><%= data.user2.nickname%></li>
-        <li><%= data.user2.age %></li>
-        <li><%= data.user2.phone%></li>
-    </ul>
-    <% }; %>
+             <p>To deploy using docker:</p>
+      <table>
+       <tr>
+         <td><ul>
+           <li>Technologies:</li>
+           <ol>
+             <li>Git & Git Hub</li>
+             <li>Visual studio (VS code)</li>
+             <li>Node JS</li>
+             <li>Docker</li>
+             <li>Nginx</li>
+           </ol>
+         </ul></td>
+         <td>
+           <ul>
+             <li>Languages:</li>
+             <ol>
+               <li>HTML </li>
+               <li>CSS</li>
+               <li>Javascript</li>
+               <li>Java</li>
+               <li>JSON</li>
+              
+             </ol>
+           </ul>
+         </td>
+       </tr>
+      </table>
+    </div>          
+            
+            
+          </div>
+          <div class ="rightcolumn">
+            <div class="field">
+              <h3>Dependencies</h3>
+              <p><span id="beforepara">T</span>hese are the project dependencies;</p>
+              <ul>
+                <li>Node v18.16.0</li>
+                <li>Bootstrap 5.3.0</li>
+                <li>NPM 9.5.1 </li>
+                <li>EJS 3.1.9</li>
+                <li>Express 4.18.2</li>
+                <li>NodeMon 2.0.22 </li>
+          </div>
+
+          <div class="field">
+            <h3>Technologies and Languages used</h3>
+            <p><span id="beforepara">T</span>hese Technologies and programming languages have been used;</p>
+              <ul>
+                <li>Node JS - Express, Embedded JavaScript</li>
+                <li>Docker</li>
+                <li>HTML and CSS </li>
+                <li>Bootstrap</li>
+                <li>Google Chrome</li>
+                <li>Visual Studio & Live Server </li>
+            </ul>
+          </div>
+          <div class="field">
+            <h3>Contact Information</h3>
+            <ul>
+                <li>Name : Eliud Gateri</li>
+                <li>Email: egateri@gmail.com</li>
+                <li>Student: Moringa School </li>
+                <li>Phone : 0700 XXX 000</li>
+                <li>Gitbub: <a href="https://github.com/egateri">https://github.com/egateri</a></li>
+
+            </ul>
+          </div>
+          </div>
+    </div>
 
 <br><br>
-<%-include('./layout/footer')%>
+
+<%- include('layout/footer') -%>

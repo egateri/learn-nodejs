@@ -15,19 +15,31 @@ router.post("/login", (req, res)=>{
 
     // res.send(req.body);
 
-    var details = {
-        name : req.body.name,
-       email: req.body.email,
-       comment: req.body.comment
-     }
-    // var result = req.body.name;
-    // var result1 = req.body.email;
-    // console.log(result);
-    // console.log(result1);
-
-   res.render('output', {title: 'Display Output', data: details});
+    if(req.body.name && req.body.password ){
+         var loggedIn =true;
+        var details = {
+            name : req.body.name,
+           password: req.body.password
+          
+         }
+       
+        console.log(res);
     
-   
+       res.render('output', {title: 'Display Output', data: details});
+    //    res.render('output', {title: 'Display Output',loggedIn : loggedIn, data: details});
+       res.end();
+    }
+
+    else {
+
+        res.send("Please provide login details"+"<p><a href =/login>Login</a></p>");
+        res.end();
+
+    }
+
+ 
     });
 
+
 exports.router = router;
+
