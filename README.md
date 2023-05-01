@@ -1,5 +1,5 @@
 ### Project Name
-Node JS Application
+Node JS Web Application
 
 ### Author
  - Name : Eliud Gateri
@@ -7,7 +7,9 @@ Node JS Application
  - Student: Moringa School
  
 ### About this project
-Node JS Application
+Node JS Web Application to demonstrate skills learnt in week 4 of the study.  
+Here we are developing routes (middlewares) with the help of Express Application and Embended JavaScript (EJS).   
+Previously learnt skills - jQuery and Javascript have also been used.
 
 
 ### Live Link
@@ -15,7 +17,10 @@ Node JS Application
  
 ### BDD
   As a user, I would like to;  
-  1. Efficiently use the website across devices of all sizes and browsers.
+  1. Efficiently use the website across devices of all sizes and browsers, 
+  1. Demonstrate the effects of the jQuery, 
+  1. Dockerize the Node Application and deploy and  
+  1. Connect the Application to a database - MongoDb or MySQL (Next Step).   
   
 
 ### Technologies and Languages used
@@ -28,7 +33,7 @@ Node JS Application
  
 ### Dependencies
  1. Node v18.16.0 _https://nodejs.org/en/download_
- 1. Bootstrap 5.3.0  _https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css_
+ 1. Bootstrap v5.3.0  _https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css_
  
  
 
@@ -36,9 +41,10 @@ Node JS Application
  1. To use the web application:  
     - Access the **[Live link](https://nodejs-twh0.onrender.com/)** on your favourite browser
     - Scroll down to navigate the entire website
-    - Navigate to the **Login**  -Input your Name, your Email address, the Message and then click the *Submit* button. 
-    - To test input validation - Repeat submitting the message by inserting wrong data types or leaving blank entries for negative test cases.
-    - Repeat above tests with Mobile and desktop devices (from the smallest to the largest) to observe the web media effects and the website responsiveness. 
+    - Use the Navigation bar to get to **Login** , **Register** , **Users** and  **Contact** links/routes -Input your details and then click the *Submit* button.   
+    - To test input validations - Repeat submitting the message by inserting wrong data types or leaving blank entries for negative test cases.
+    - Repeat above tests with Mobile and desktop devices (from the smallest to the largest) to observe the web media effects and the website responsiveness.  
+
      
  2. To develop a similar web application or make improvements: 
     - Ensure you have installed [google chrome](https://www.google.com/chrome/) browser 
@@ -47,17 +53,20 @@ Node JS Application
        `mkdir your_project_folder`
     - Navigate to your project folder  
        `cd your_project_folder`  
-    - Clone the Delani Studio source code into your project folder    
+    - Clone the Node JS App source code into your project folder    
        `git clone https://github.com/egateri/learn-nodejs.git`
     - Use the Visual Studio code editor to open, review and modify the code   
-       `code .`     
+       `code .`    
+    - Install all the project dependencies      
+       `npm install`   
     - Locally test the web application using the Live Server 
     - Use the Chrome browser _inspect_ and _console_ functionalities to test jQuery functions, code and device responsiveness	
-    - Use [Bootstrap](https://getbootstrap.com/) tool to help improve on the look and feel of the web application  
-    - Request to merge new improvements into the master branch  
-    - Push update to the main branch using git once the merge requests are approved.    
-    - You may also identify and suggest bugs that require fixing.
-	- Finally host your website on Github live pages or domain hoster of your choice! 
+    - Use [Bootstrap](https://getbootstrap.com/) tool to help improve on the look and feel of the web application   
+    - Request to be invited as a contributor and create your own branch once the invitation is approved.   
+    - Request to merge new improvements into the master branch once testing is compled and all bugs fixed.     
+    - You may also identify and suggest bugs that require fixing by raising an issue on Github.  
+	 - Finally host your Web Application on domain hoster or cloud provide of your choice!   
+
 	 
 3. To deploy using docker:   
     - Build the app     
