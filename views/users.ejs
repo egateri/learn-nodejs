@@ -2,15 +2,18 @@
 
 <br><br>
 <div class="container">
-  <h3>Users:</h3>
+  <h3 class="jQueryHeader">Users:</h3>
 <div class="users">
  <p>This is the List of Users.</p>
     <% data.forEach(user=>{ %> 
       <ul>
-        <li>Name : <%= user.name %></li>
-        <li>Nick Name : <%= user.nickname %></li>
-        <li>Age : <%= user.age %></li>
-        <li>Phone : <%= user.phone %></li>
+        <li class="jQueryLi">Name : <%= user.name %></li>
+        <li class="jQueryLi">Nick Name : <%= user.nickname %></li>
+        <li class="jQueryLi">Email : <%= user.email %></li>
+        <li class="jQueryLi">Age : <%= user.age %></li>
+        <li class="jQueryLi">Gender : <%= user.gender %></li>
+        <li class="jQueryLi">Phone : <%= user.phone %></li>
+        <hr>
       </ul>      
         
     <% }) %> 

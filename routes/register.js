@@ -16,6 +16,9 @@ router.post("/register", (req, res) => {
       "<p> Nickname: " +
       req.body.nickname +
       "</p>" +
+      "<p> Email: " +
+      req.body.email +
+      "</p>" +
       "<p> Phone: " +
       req.body.phone +
       "</p>" +

@@ -9,6 +9,14 @@
   .field li{
     font-size:small;
   }
+
+  .users {
+    border: solid;
+    border-color: darkolivegreen;
+    border-radius: 10px;
+    border-width: 1pt;
+    padding: 20px;
+  }
   .users li {
    
     color:darkgreen;
@@ -33,8 +41,6 @@
   
 
   
-
-  
   p,
   h1,
   h2,
@@ -48,79 +54,18 @@
      
   }
   
-  #myform input {
-    /* background: transparent; */
-    border-width: 0.1ch;
-    /* border-color: white; */
-    border-color: grey;
-    /* color: white !important; */
-    color: black !important;
-    font-weight: bolder;
-    
-  }
-  
-  /* #myform textarea { */
-    /* background: transparent; */
-    /* border-width: 0.1ch; */
-    /* border-color: grey; */
-    /* height: 240px; */
-    /* color: white !important; */
-    /* color: black !important; */
-    /* font-weight: bolder; */
-    /* width: 80%; */
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
-    /* border-radius: 4px; */
-  /* } */
-  
-  /* #myform input[type=text]::-webkit-input-placeholder */
-  /* {  */
-    /* color:white; */
-    /* color:black; */
-    
-  /* } */
-  /* #myform textarea::-webkit-input-placeholder */
-  /* {  */
-    /* color:white; */
-    /* color:black; */
 
-  /* } */
   
-  /* #myform input[type=email]::-webkit-input-placeholder
-  { 
-     /* color:white; */
-     /* color:black; */
-    
-  /* } */ 
+
   
-  /* #myform input[type=text] {
-    width: 41%;
-    height:30px;
-    margin-left: 10%;
-    float: left;
-    border-radius: 3px;
-  } */
+ 
   
-  /* #myform input[type=email] {
-    width: 37%;
-    height:30px;
-    float: right;
-    margin-right: 10%;
-    border-radius: 3px;
-  } */
+ 
+
   
-  /* #myform input[type=submit]{
-    float: left;
-    margin-left: 10%;
-    height:35px;
-    border-radius: 3px;
-    border-color: grey;
-  } */
+
   
-  /* #myform  form {
-    margin-bottom: 20px;
-    padding:30px;
-  } */
+
 
   /* style for the form  */
 #form {
@@ -172,37 +117,6 @@
   text-align: left; 
 }
 
-  @media screen and (max-width: 1200px) {
-    textarea{
-      height:190px;
-    }
-  }
-  
-  @media screen and (max-width: 800px) {
-    textarea{
-      height:150px;
-    } 
-    h5 {
-      font-size: small;
-    }
-  }
-  
-  @media screen and (max-width: 576px) {
-    textarea{
-      height:120px;
-    }
-    h5 {
-      font-size: x-small;
-    }
-  }
-  @media screen and (max-width: 400px) {
-    textarea{
-      height:80px;
-    }
-    h5 {
-      font-size: xx-small;
-    }
-  }
 
   /* begin here  */
 

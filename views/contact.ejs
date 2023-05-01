@@ -1,9 +1,9 @@
 <%- include('layout/header') -%>
 <br><br>
 <div class="container">
-    <h3>Please Contact Us:</h3>
+    <h3 class="jQueryHeader">Please Contact Us:</h3>
     <div class="row">
-        <div class="col-sm-7 col-md-8 col-lg-10">
+        <div class="col-sm-11 col-md-11 col-lg-11">
     
         <form id="form" method="post" action="/contact">
             <div class="mb-0">
@@ -36,14 +36,14 @@
             </div>
             <div class="mb-0">
             <label for="password" class="form-label">Message:</label>
-            <textarea  name="comment"  id ="textarea" row ="3" cols="60" form="myform" placeholder ="Your Message here..."required></textarea><br/><br/>
+            <textarea id="inputsm" class="form-control input-sm" name="comment"  row ="300" cols="100"  value ="" required></textarea>
             <div id="" class="form-text">Share feedback:</div>   
         </div>
    
             <button type="submit" class="btn btn-primary h6">Submit</button>
           </form>
     </div>
-    <div class="col-sm-5 col-md-4 col-lg-2"></div>
+    <div class="col-sm-1 col-md-1 col-lg-1"></div>
 </div>
 </div>
 <br><br>
