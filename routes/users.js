@@ -61,7 +61,7 @@ router.get("/users", (req, res) => {
       phone: 1501,
       email: "angie@agnes.com",
       gender: "Female",
-    }
+    },
   ];
   if (loggedIn) {
     res.render("users", {
@@ -69,9 +69,11 @@ router.get("/users", (req, res) => {
       loggedIn: loggedIn,
       data: details,
     });
+    res.end();
   } else {
     // res.render("users", { title: "Users Page",loggedIn:loggedIn, data: details });
     res.send("Not Logged In!");
+    res.end();
   }
 });
 

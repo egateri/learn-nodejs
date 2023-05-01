@@ -4,6 +4,7 @@ const router = express.Router();
 
 router.get("/register", (req, res) => {
   res.render("register", { title: "Register Page" });
+  res.end();
 });
 
 router.post("/register", (req, res) => {

@@ -1,73 +1,55 @@
 * {
-    box-sizing: border-box;
-  }
-  body {
-    background-color: white;
-    margin:0;
-  }
-  
-  .field li{
-    font-size:small;
-  }
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  margin: 0;
+}
 
-  .users {
-    border: solid;
-    border-color: darkolivegreen;
-    border-radius: 10px;
-    border-width: 1pt;
-    padding: 20px;
-  }
-  .users li {
-   
-    color:darkgreen;
-  }
-   h6, p {
-    font-size:small;
-  }
+.field li {
+  font-size: small;
+}
 
-    /* styles for the footer  */
-    #footer {
-      background-color: black;
-      color: #ffffff;
-      padding: 70px 20px;
-      margin-top: 5px;
-      text-align: left;
-      bottom: 0;
-    }
-    #footer p {
-      
-      text-align: left;
-    }
-  
+.users {
+  border: solid;
+  border-color: darkolivegreen;
+  border-radius: 10px;
+  border-width: 1pt;
+  padding: 20px;
+}
+.users li {
+  color: darkgreen;
+}
+h6,
+p {
+  font-size: small;
+}
 
-  
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  ul
- {
-    text-align: left;
-     
-  }
-  
+/* styles for the footer  */
+#footer {
+  background-color: black;
+  color: #ffffff;
+  padding: 70px 20px;
+  margin-top: 5px;
+  text-align: left;
+  bottom: 0;
+}
+#footer p {
+  text-align: left;
+}
 
-  
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  text-align: left;
+}
 
-  
- 
-  
- 
-
-  
-
-  
-
-
-  /* style for the form  */
+/* style for the form  */
 #form {
   width: 100%;
   padding: 5px;
@@ -112,15 +94,16 @@
   font-size: small;
   text-align: left;
 }
-  
- h6 .bg-bg-light {
-  text-align: left; 
+
+h6 .bg-bg-light {
+  text-align: left;
 }
 
+em {
+  background-color: burlywood;
+}
 
-  /* begin here  */
-
-  /* span style */
+/* span style */
 #beforepara {
   float: left;
   font-size: 250%;

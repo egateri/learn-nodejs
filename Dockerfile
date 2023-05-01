@@ -1,5 +1,7 @@
 FROM node:18
 
+LABEL AUTHOR: Eliud Gateri <egateri@gmail.com>
+
 # Create app directory
 WORKDIR /usr/src/app
 

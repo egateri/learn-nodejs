@@ -6,23 +6,23 @@ $(document).ready(() => {
   $(".jQueryPara").click(() => {
     $(".jQueryPara").toggle();
   });
-  $(".jQueryHeader").mouseenter(()=>{
+  $(".jQueryHeader").mouseenter(() => {
     $(".jQueryHeader").css("color", "red");
   });
-  $(".jQueryHeader").mouseleave(()=>{
+  $(".jQueryHeader").mouseleave(() => {
     $(".jQueryHeader").css("color", "green");
   });
 
-  $(".jQueryUl").mouseenter(()=>{
+  $(".jQueryUl").mouseenter(() => {
     $(".jQueryUl").css("color", "green");
   });
-  $(".jQueryUl").mouseleave(()=>{
+  $(".jQueryUl").mouseleave(() => {
     $(".jQueryUl").css("color", "black");
   });
-  $(".jQueryLi").mouseenter(()=>{
+  $(".jQueryLi").mouseenter(() => {
     $(".jQueryLi").css("color", "black");
   });
-  $(".jQueryLi").mouseleave(()=>{
+  $(".jQueryLi").mouseleave(() => {
     $(".jQueryLi").css("color", "green");
   });
 });

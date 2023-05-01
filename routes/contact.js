@@ -4,6 +4,7 @@ const router = express.Router();
 
 router.get("/contact", (req, res) => {
   res.render("contact", { title: "Contact Page" });
+  res.end();
 });
 
 router.post("/contact", (req, res) => {
@@ -24,6 +25,7 @@ router.post("/contact", (req, res) => {
       details.comment +
       " </p><p><a href =/>Home</a></p>"
   );
+  res.end();
 });
 
 exports.router = router;

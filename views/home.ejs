@@ -28,40 +28,69 @@
            
                <ol class="jQueryUl">
                  <li>Efficiently use the website across devices of all sizes and browsers.</li>
+                 <li>Demonstrate the effects of the jQuery.</li>
+                 <li>Dockerize the Node Application and deploy.</li>
                </ol>
     </div> 
     <div class="field"> 
       <h3 class="jQueryHeader">Setup and Installations Instructions</h3>          
              <p>To develop a similar web application or make improvements:</p>
+  <ul>
+    <li>Ensure you have installed <a href="https://www.google.com/chrome/">google chrome</a> browser</li>
+    <li>Ensure you have installed a code editor like Visual Studio and <a href="https://git-scm.com/download/win">git</a></li>
+    <li>
+        Create a project folder preferably from command line  <br>
+       <em> `mkdir your_project_folder`</em>
+      
+    </li>
+    <li>
+        Navigate to your project folder   <br>
+        <em> `cd your_project_folder`</em>
+        
+    </li>
+    <li>
+        Clone the Delani Studio source code into your project folder   <br> 
+        <em>`git clone https://github.com/egateri/learn-nodejs.git`</em> 
+       
+    </li>
+    <li>
+        Use the Visual Studio code editor to open, review and modify the code   <br> 
+        <em>`code .` </em>
+        
+    </li>
+    
+    <li>Locally test the web application using the Live Server</li>
+    <li>Use the Chrome browser <strong>inspect</strong> and <strong>console</strong> functionalities to test jQuery functions, code and device responsiveness</li>
+    <li>Use <a href="https://getbootstrap.com/">Bootstrap</a> tool to help improve on the look and feel of the web application</li>
+    <li>Request to merge new improvements into the master branch</li>
+    <li>Push update to the main branch using git once the merge requests are approved.</li>
+    <li>You may also identify and suggest bugs that require fixing.</li>
+    <li>Finally host your website on Github live pages or domain hoster of your choice! </li>
 
+</ul>
              <p>To deploy using docker:</p>
-      <table>
-       <tr>
-         <td><ul class="jQueryUl">
-           <li>Technologies:</li>
-           <ol>
-             <li>Git & Git Hub</li>
-             <li>Visual studio (VS code)</li>
-             <li>Node JS</li>
-             <li>Docker</li>
-             <li>Nginx</li>
-           </ol>
-         </ul></td>
-         <td>
-           <ul class="jQueryUl">
-             <li>Languages:</li>
-             <ol>
-               <li>HTML </li>
-               <li>CSS</li>
-               <li>Javascript</li>
-               <li>Java</li>
-               <li>JSON</li>
-              
-             </ol>
-           </ul>
-         </td>
-       </tr>
-      </table>
+          <ul>
+            <li> 
+                 Build the app   <br>  
+                 <em>`docker build -t node-web-app .`</em>
+                </li>
+            <li>Run the app  <br>  
+                <em>`docker run -p 80:5500 -d node-web-app`</em>
+                </li>
+            <li>
+                Test the app  <br>   
+                <em>`curl -i localhost:80`</em>
+            </li>
+            <li>
+                Get the docker container ID  <br>  
+                <em>`docker ps -a`</em> 
+            </li>
+            <li>
+                Access the container from command line <br>  
+                <em>`docker exec -it <container id> /bin/bash `</em>    
+            </li>
+          </ul>
+      
     </div>          
             
             
@@ -77,6 +106,7 @@
                 <li>EJS 3.1.9</li>
                 <li>Express 4.18.2</li>
                 <li>NodeMon 2.0.22 </li>
+                <li>jQuery 3.6.3 </li>
           </div>
 
           <div class="field">
@@ -93,9 +123,18 @@
           </div>
           <div class="field">
             <h3 class="jQueryHeader">jQuery</h3>
-            <!-- <h3 class="jQueryHeader" style="display:none; color:red;font-size:x-large;">jQuery</h3> -->
             <p class="jQueryPara" >Click this paragraph  to demonstrate jQuery.</p>
             <p class="jQueryPara" style="display:none; color:red;font-size:x-large;">I am a jQuery Paragraph. Click me Again!</p>
+
+            <p>Please hover the mouse over the headers and the lists to observe jQuery effects</p>
+          </div>
+          <div class="field">
+            <h3 class="jQueryHeader">Live Link</h3>
+            <p>Project has been deployed on below Live Links:</p>
+             <a href="https://nodejs2-z5ym.onrender.com/ ">Docker App Deployment</a>
+             <br>
+             <a href="https://nodejs-twh0.onrender.com/">Node Js App Deplyment</a>
+           
           </div>
           <div class="field">
             <h3 class="jQueryHeader">Contact Information</h3>
