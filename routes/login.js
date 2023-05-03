@@ -1,31 +1,35 @@
+
 const express = require("express");
 
 const router = express.Router();
 
+var isGetMethod; //Alert EJS if the Method is POST or GET - To use SAME EJS file for both POST and Get Requests
+
 router.get("/login", (req, res) => {
-  res.render("login", { title: "Login Page" });
-  res.end();
+  
+    // var isGetMethod = true;
+
+    console.log(res);
+
+    res.render("login", { title: "Login Page", isGetMethod:true });
+ 
+    res.end();
+  
 });
 
 router.post("/login", (req, res) => {
-  if (req.body.name && req.body.password) {
-    var loggedIn = true;
-    var details = {
+
+  // var isGetMethod = false;
+
+ var details = {
       name: req.body.name,
       password: req.body.password,
     };
 
-    console.log(res);
 
-    res.render("output", { title: "Display Output", data: details });
-    //    res.render('output', {title: 'Display Output',loggedIn : loggedIn, data: details});
-    res.end();
-  } else {
-    res.send(
-      "Please provide login details" + "<p><a href =/login>Login</a></p>"
-    );
-    res.end();
-  }
+  res.render("login", { title: "Login Page", isGetMethod:false, data: details });
+  res.end();
 });
 
 exports.router = router;
+

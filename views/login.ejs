@@ -1,58 +1,70 @@
 <%- include('layout/header') -%>
-<br><br>
-<br />
 
-  <div class="container">
-    <h3 class="jQueryHeader">Login:</h3>
-    <p class="text-muted">Enter Below details to Log In:</p>
-  </div>
-  <div class="container">
- 
-    <div class="row">
-      <div class="col-sm-7 col-md-6 col-lg-5">
-        <form id="form" method="post" action="/login">
-          <div class="mb-0">
-            <label for="name" class="form-label">Name:</label>
-            <input
-              class="form-control input-sm"
-              id="inputsm"
-              type="text"
-              name="name"
-              value=""
-              placeholder=""
-              required
-            />
-            <div id="" class="form-text">
-              Enter Your Name
-            </div>
+<!-- Display Form if the Request is GET -->
+<%if(isGetMethod){%> 
+    <br><br>
+      <div class="container">
+        <h3 class="jQueryHeader">Login:</h3>
+        <p class="text-muted">Enter Below details to Log In:</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 col-md-6 col-lg-5">
+            <form id="form" method="post" action="/login">
+              <div class="mb-0">
+                <label for="name" class="form-label">Name:</label>
+                <input
+                  class="form-control input-sm"
+                  id="inputsm"
+                  type="text"
+                  name="name"
+                  value=""
+                  placeholder=""
+                  required
+                />
+                <div id="" class="form-text">
+                  Enter Your Name
+                </div>
+              </div>
+              <div class="mb-0">
+                <label for="month" class="form-label">Password:</label>
+                <input
+                  class="form-control input-sm"
+                  id="inputsm"
+                  type="password"
+                  name="password"
+                  value=""
+                  placeholder=""
+                  required
+                />
+                <div id="" class="form-text">
+                  Enter Your Password
+                </div>
+              </div>
+              <button  type="submit" class="btn btn-primary h6">
+                Submit
+              </button>
+            </form>
+           
           </div>
-          <div class="mb-0">
-            <label for="month" class="form-label">Password:</label>
-            <input
-              class="form-control input-sm"
-              id="inputsm"
-              type="password"
-              name="password"
-              value=""
-              placeholder=""
-              required
-            />
-            <div id="" class="form-text">
-              Enter Your Password
-            </div>
+          <div class="col-sm-5 col-md-6 col-lg-7">
           </div>
+        </div>
+      </div>
+    <br/> 
+    
+ <%}%>
+ <!-- Display Result if the Request Method is POST -->
+ <%if(!isGetMethod){%> 
+    <br>
+    <br>
+    <div class="justify-content-middle">
+    <h3 class="jQueryHeader">Success.</h3>
+    <p>You have successfully logged In with below Credentials!</p>
+    <li> User Name: <%= data.name %></li>
+    <li> Password :<%= data.password %></li>  
 
-         
-          <button  type="submit" class="btn btn-primary h6">
-            Submit
-          </button>
-        </form>
-       
-      </div>
-      <div class="col-sm-5 col-md-6 col-lg-7">
-      </div>
     </div>
-  </div>
-<br/>
-
+ <%}%>  
+<br><br>
 <%- include('layout/footer') -%>
